@@ -54,6 +54,18 @@ std::vector<std::string> Split(const std::string& s, char tok = ',')
 }
 
 
+std::vector<int> SplitInts(const std::string& s, char tok = ',')
+{
+    std::vector<int> r;
+    Split(s, [&](std::string&& x) {
+        if (!x.empty()) {
+            r.push_back(stoi(x));
+        }
+        }, tok);
+    return r;
+}
+
+
 template<class _F>
 void Split(const std::string& s, _F fn, const std::string& tok = "->")
 {
