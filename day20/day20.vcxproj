@@ -148,6 +148,9 @@
     <Text Include="test.txt" />
     <Text Include="test2.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="input.dot" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

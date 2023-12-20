@@ -24,4 +24,7 @@
     <Text Include="input.txt" />
     <Text Include="test2.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="input.dot" />
+  </ItemGroup>
 </Project>
