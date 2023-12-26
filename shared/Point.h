@@ -226,4 +226,8 @@ namespace P3
     const Point3 X({ 1, 0, 0 });
     const Point3 Y({ 0, 1, 0 });
     const Point3 Z({ 0, 0, 1 });
+
+    Point3 Cross(const Point3& p1, const Point3& p2) {
+        return Point3({ p1[1] * p2[2] - p1[2] * p2[1], p1[2] * p2[0] - p1[0] * p2[2], p1[0] * p2[1] - p1[1] * p2[2] });
+    }
 }
